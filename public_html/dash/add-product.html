@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="product.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <title>Add Product</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+    <!-- Page plugins -->
+    <!-- Argon CSS -->
+    <link rel="stylesheet" href="assets/css/argon.css?v=1.2.0" type="text/css">
+
+
+    <style> 
+     header {
+            background-color: #000;
+            font-family: century gothic;
+            font-weight: bold;
+            
+        }
+        footer {
+            background-color: #000;
+            font-family: century gothic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+    <body id="reportsPage">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <nav class="site-header sticky-top py-1" style="height: 50px; background-color: black; font-weight: bold; ">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="index.html" aria-label="Product">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="https://zed00.000webhostapp.com/index.html">Home</a>
+    <a class="py-2 d-none d-md-inline-block" href="https://zed00.000webhostapp.com/All%20Games.html">Game Store</a>
+    
+    <a class="py-2 d-none d-md-inline-block" href="https://zed00.000webhostapp.com/index.html#cloud">Cloud Gaming</a>
+    <a class="py-2 d-none d-md-inline-block" href="https://zed00.000webhostapp.com/allhard.html">Hardware</a>    
+    
+  
+    
+    <div class="widget-header" style="background-color: black;">
+      <a href="https://zed00.000webhostapp.com/Cart.html" >
+        
+          <i class="fa fa-shopping-cart" style="color:rgb(5, 121, 92); font-size: 28px; padding-top: 8px;"></i>
+        </a>
+       			
+    </div>
+    
+
+    <a class="btn btn-outline-primary" href="https://zed00.000webhostapp.com/Login1.html"  role="button" aria-pressed="true" style="border: solid white; height: 50%;"><b>Login</b></a>
+    
+    <a class="btn btn-outline-primary" href="index.html"  role="button" aria-pressed="true" style="border: solid white; height: 50%;"><b>Admin</b></a>
+ 
+  </div>
+</nav>
+        
+
+
+        <br />
+        <br />
+        <br />
+        <div class="container tm-mt-big tm-mb-big">
+            <div class="row">
+                <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+                    <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="tm-block-title d-inline-block">Add Product</h2>
+                            </div>
+                        </div>
+                        <div class="row tm-edit-product-row">
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                                
+                                    <div class="form-group mb-3">
+                                        <label for="name">
+                                            Product Name
+                                        </label>
+                                        <input id="name"
+                                               name="name"
+                                               type="text"
+                                               class="form-control validate"
+                                               required />
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="description">Description</label>
+                                        <textarea class="form-control validate"
+                                                  rows="3"
+                                                  required></textarea>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="category">Category</label>
+                                        <select class="custom-select tm-select-accounts"
+                                                id="category">
+                                            <option selected>Select category</option>
+                                            <option value="1">Shooting</option>
+                                            <option value="2">Open world</option>
+                                            <option value="3">Racing</option>
+                                            <option value="4">Battle Royale</option>
+                                            <option value="5">Gaming Hardware</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group mb-3 col-xs-12 col-sm-6">
+                                            <label for="stock">
+                                                Units In Stock
+                                            </label>
+                                            <input id="stock"
+                                                   name="stock"
+                                                   type="number"
+                                                   class="form-control validate"
+                                                   required />
+                                        </div>
+                                    </div>
+
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <div class="tm-product-img-dummy mx-auto">
+                                    <i class="fas fa-cloud-upload-alt tm-upload-icon"
+                                       onclick="document.getElementById('fileInput').click();"></i>
+                                </div>
+                                
+                                <div class="custom-file mt-3 mb-3">
+                                    <button type="button" class="btn btn-secondary btn-circle btn-lg" style="background-color:green">Add image </button> 
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-secondary btn-circle btn-lg" style="background-color:green">Add Product</button> 
+								<br/>
+							<br/>
+                            </div>
+							
+							<div class="col-12">
+                          <a href="index.html"
+                           class="btn btn-primary " style="background-color:black">Back to Dashboard</a>
+						   </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+     
+        <br />
+        <br />
+        <br />
+
+
+
+
+
+        <footer id="footer" style="padding-top: 70px; color: white;">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>GAME STORE</h3>
+          <p>
+            B207 Street <br>
+            New York, NY 535022<br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> bcs181033@cust.pk<br>
+            <strong>Email:</strong> bcs181056@cust.pk<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links" >
+          <h4>Useful Links</h4>
+          <ul style="color: rgb(0, 93, 231);">
+            <li><i class="bx bx-chevron-right"></i> <a href="https://zed00.000webhostapp.com/" style="color: white;">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="https://zed00.000webhostapp.com/All%20Games.html" style="color: white;">Games</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="https://zed00.000webhostapp.com/#cloud" style="color: white;">Cloud Gaming</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="https://zed00.000webhostapp.com/#hardware" style="color: white;">Hardware Products</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+         
+          <div class="social-links mt-3">
+            <a href="https://twitter.com/?lang=en" class="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true" style="font-size: 30px;"></i></a>
+            <a href="https://www.instagram.com/?hl=en" class="instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 30px; color: rgb(129, 42, 86);"></i></a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" class="instagram" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true" style="font-size: 30px; color: rgb(59, 89, 152)"></i></a>
+            <a href="https://www.linkedin.com/home/?originalSubdomain=pk" class="linkedin" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 30px; color: rgb(14, 118, 168)"></i></a>
+   
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom clearfix">
+    <div class="copyright" style="color: rgb(7, 59, 155);">
+      &copy; Copyright <strong><span>GAME STORE</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits" style="color: rgb(7, 59, 155);">
+   
+      Designed by ZARAR YOUSUF & OMAR AZIZ
+    </div>
+  </div>
+  <br>
+</footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+        <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+           
+      
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <!-- https://jquery.com/download/ -->
+        <script src="jquery-ui-datepicker/jquery-ui.min.js"></script>
+        <!-- https://jqueryui.com/download/ -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- https://getbootstrap.com/ -->
+        <script>
+      $(function() {
+        $("#expire_date").datepicker();
+      });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>
